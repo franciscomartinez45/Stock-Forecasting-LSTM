@@ -1,0 +1,5 @@
+transformers
+torch
+yfinance
+pandas
+requests
