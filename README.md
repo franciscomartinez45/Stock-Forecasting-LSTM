@@ -23,11 +23,15 @@ For each trading day, FinBERT classifies every news headline about the stock as 
 
 ```
 Stock-Forecasting-LSTM/
-├── Sentiment_Analysis.ipynb       # Stage 1: news collection + FinBERT scoring pipeline
-├── aapl_news_2023.csv             # Raw AAPL headlines from Polygon.io (full year 2023)
-├── msft_news_2023.csv             # Raw MSFT headlines from Polygon.io (full year 2023)
-├── aapl_daily_sentiment_2023.csv  # Processed daily sentiment + price data for AAPL
-├── msft_daily_sentiment_2023.csv  # Processed daily sentiment + price data for MSFT
+├── notebooks/
+│   └── Sentiment_Analysis.ipynb       # Stage 1: news collection + FinBERT scoring pipeline
+├── data/
+│   ├── raw/
+│   │   ├── aapl_news_2023.csv         # Raw AAPL headlines from Polygon.io (full year 2023)
+│   │   └── msft_news_2023.csv         # Raw MSFT headlines from Polygon.io (full year 2023)
+│   └── processed/
+│       ├── aapl_daily_sentiment_2023.csv  # Daily sentiment + price features for AAPL
+│       └── msft_daily_sentiment_2023.csv  # Daily sentiment + price features for MSFT
 └── LICENSE
 ```
 
